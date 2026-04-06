@@ -28,6 +28,9 @@ jobs:
           submodules: recursive
 
 # Please do not touch the following action
+        - name: Show files
+        run: ls -R
+
       - name: Store deployment content
         uses: ionos-deploy-now/artifact-action@v1
         with:
