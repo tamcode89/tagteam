@@ -27,8 +27,7 @@ jobs:
         with:
           submodules: recursive
 
-# Please do not touch the following action
-        - name: Show files
+      - name: Show files
         run: ls -R
 
       - name: Store deployment content
