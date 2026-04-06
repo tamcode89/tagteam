@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./
+  DEPLOYMENT_FOLDER: index.html
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
