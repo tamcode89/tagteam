@@ -31,12 +31,12 @@ jobs:
         run: ls -R
 
       - name: Store deployment content
-  uses: ionos-deploy-now/artifact-action@v1
-  with:
-    api-key: ${{ secrets.IONOS_API_KEY }}
-    service-host: api-us.ionos.space
-    project-id: 0295b244-1708-42b0-a174-0f7aa3bca146
-    branch-id: ${{ inputs.branch-id }}
-    version: ${{ github.sha }}
-    folder: ${{ env.DEPLOYMENT_FOLDER }}
-    action: upload
+        uses: ionos-deploy-now/artifact-action@v1
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-us.ionos.space
+          project-id: 0295b244-1708-42b0-a174-0f7aa3bca146
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          action: upload
